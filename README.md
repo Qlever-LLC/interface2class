@@ -1,8 +1,9 @@
 # @qlever-llc/interface2class
 
-[![Coverage Status](https://coveralls.io/repos/Qlever-LLC/@qlever-llc/interface2class/badge.svg?branch=master)](https://coveralls.io/r/Qlever-LLC/@qlever-llc/interface2class?branch=master)
+[![Version](https://img.shields.io/npm/v/@qlever-llc/interface2class.svg)](https://npmjs.org/package/@qlever-llc/interface2class)
+[![Coverage Status](https://coveralls.io/repos/Qlever-LLC/interface2class/badge.svg?branch=master)](https://coveralls.io/r/Qlever-LLC/interface2class?branch=master)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![License](https://img.shields.io/github/license/Qlever-LLC/@qlever-llc/interface2class)](LICENSE)
+[![License](https://img.shields.io/github/license/Qlever-LLC/interface2class)](LICENSE)
 
 A TypeScript utility to create a class from an interface
 without having to duplicate the interface's properties.

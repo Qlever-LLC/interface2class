@@ -36,14 +36,14 @@ class FooClass2 extends makeClass<Foo, 'a'>() {
 }
 
 test('Create class from interface', (t) => {
-  const foo: Foo = { a: 1, b: '2' };
+  const foo = { a: 1, b: '2' } as const satisfies Foo;
   const fooClass = new FooClass(foo) satisfies Foo;
 
   t.deepEqual(Object.entries(fooClass), Object.entries(foo));
 });
 
 test('Extend class from interface', (t) => {
-  const foo: Foo = { a: 1, b: '2' };
+  const foo = { a: 1, b: '2' } as const satisfies Foo;
   const fooClass = new F(foo) satisfies Foo;
 
   t.deepEqual(Object.entries(fooClass), Object.entries(foo));
@@ -58,7 +58,7 @@ test('Access interface fields on class', (t) => {
 });
 
 test('Add defaults for optional fields', (t) => {
-  const foo: Foo = { b: '2' };
+  const foo = { b: '2' } as const satisfies Foo;
   const fooClass = new FooClass2(foo) satisfies Foo;
 
   const { a } = fooClass;

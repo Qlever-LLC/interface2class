@@ -29,4 +29,4 @@ export interface I2Class<I, D extends keyof I = never>
  * @typeParam D - The keys of `I` that should be required to set
  * @see {@link I2Class}
  */
-export const makeClass: <I, D = never>() => I2Class<I, D>;
+export const makeClass: <I, D extends keyof I = never>() => I2Class<I, D>;
